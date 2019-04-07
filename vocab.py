@@ -28,7 +28,7 @@ sorted_words = [x[0] for x in sorted_word_to_cnt]
 sorted_words = ["<eos>"] + sorted_words
 
 # for other corpus you need to translate some low frequency words into <uniq>
-# sorted_words = ["<unq>", "<sos>", "<eos>"] + sorted_words
+# sorted_words = ["<unk>", "<sos>", "<eos>"] + sorted_words
 # if len(sorted_words) > 10000:
 #     sorted_word = sorted_words[:10000]
 
