@@ -7,7 +7,7 @@
 
 import numpy as np
 import tensorflow as tf
-import data_batch
+from data_batch import *
 
 train_data = "data/ptb.train"
 eval_data = "data/ptb.valid"
@@ -108,12 +108,9 @@ def main():
 
     with tf.Session() as sess:
         tf.global_variables_initializer().run()
-        train_batches = data_batch.make_batch(data_batch.read_data(train_data),
-                                              train_batch_size, train_num_step)
-        eval_batches = data_batch.make_batch(data_batch.read_data(eval_data),
-                                             eval_batch_size, eval_num_step)
-        test_batches = data_batch.make_batch(data_batch.read_data(test_data),
-                                             eval_batch_size, eval_num_step)
+        train_batches = make_batch(read_data(train_data), train_batch_size, train_num_step)
+        eval_batches = make_batch(read_data(eval_data), eval_batch_size, eval_num_step)
+        test_batches = make_batch(read_data(test_data), eval_batch_size, eval_num_step)
 
         step = 0
 
