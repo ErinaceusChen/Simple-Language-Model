@@ -90,7 +90,7 @@ def run_epoch(session, model, batches, train_op, output_log, step):
         cost, state, _ = session.run([model.cost, model.final_state, train_op],
                                   {model.input_data: x, model.targets: y, model.initial_state: state})
         total_costs += cost
-        iters += model.num_steps    # todo:
+        iters += model.num_steps    # each word run model will be count as iter
 
         if output_log and step % 100 == 0:
             print(f"After {step} steps, perplexity is {total_costs / iters}")
