@@ -7,9 +7,9 @@
 
 import codecs
 
-raw_data = "data/ptb.valid.txt"  # origin train data corpus
+raw_data = "data/ptb.test.txt"  # origin train data corpus
 vocab = 'data/ptb.vocab'  # corpus vocabulary
-output_data = "data/ptb.valid"  # the output file for word to number
+output_data = "data/ptb.test"  # the output file for word to number
 
 with codecs.open(vocab, "r", "utf-8") as f_vocab:
     words_id_dict = dict((w.strip(), idx) for idx, w in enumerate(f_vocab))
