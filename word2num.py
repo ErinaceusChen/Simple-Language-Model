@@ -3,7 +3,7 @@
 # @ FileName    : word2num.py
 # @ CreatedDate : 2019-04-07 18:56
 # @ Author      : Joshua Chan
-# @ Company     : PingAn OneConnect
+
 
 import codecs
 

@@ -3,7 +3,7 @@
 # @ FileName    : data_batch.py
 # @ CreatedDate : 2019-04-07 19:18
 # @ Author      : Joshua Chan
-# @ Company     : PingAn OneConnect
+
 
 import os
 import numpy as np

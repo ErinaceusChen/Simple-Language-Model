@@ -3,7 +3,7 @@
 # @ FileName    : train.py
 # @ CreatedDate : 2019-04-07 20:46
 # @ Author      : Joshua Chan
-# @ Company     : PingAn OneConnect
+
 
 import numpy as np
 import tensorflow as tf
